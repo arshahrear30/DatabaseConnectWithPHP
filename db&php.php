@@ -5,8 +5,8 @@
 //create করবো ।  এরপর phpmyadmin এ যাবো ।
 
 $name = $_GET['n'];
-$mobile =$_GET['n'];
-$email =$_GET['n'];
+$mobile =$_GET['m'];
+$email =$_GET['e'];
 
 /*
 একটা Database এ Data কিভাবে link এর মাধ্যমে Hit করে ? সেটা দেখবো । 
@@ -45,7 +45,7 @@ $result = mysqli_query($con,$sql);
 
 //mysqli_query মানে server এর সাথে connection ঘটানো । আর 1st bracket  মাঝে বুঝাইলাম কার কার সাথে connection করলাম
 
-if($result) echo"<br> Data insert Successful" ;// যদি সঠিক ভাব result variable এর কাজ হয় তখন Successful echo হবে ।
+if($result) echo"\n Data insert Successful" ;// যদি সঠিক ভাব result variable এর কাজ হয় তখন Successful echo হবে ।
 else echo " Query error!!";
 
 
